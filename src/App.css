@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+.gallery{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(2,2fr);
+    grid-gap:1rem;
+    margin:0.7rem 2rem}
+
+.navbar{
+    height:4rem;
+    background-color: rgb(75, 236, 110);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    margin-bottom: 1rem;
+    z-index:999;
+}
+.navbar>h2{
+    color:rgb(90, 82, 82);
+}
+.navbar>p{
+    border: 1px solid rgb(245, 234, 234);
+    width: 6rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    background-color: rgb(75, 70, 70);
+}
+.dark{
+    color:white;
+    background-color: #333;
+}
+.light{
+    color:black;
+    background-color: White;
+}
+.loader{
+    border: 10px solid rgb(56, 209, 125);
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    border-top: 10px solid rgb(209, 90, 90);
+    animation: spin 2s linear infinite;
+    margin:5rem auto;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.left-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media screen and (max-width:720px) {
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: repeat(4,2fr);
+    }
+    .navbar>h2{
+        font-size: 1.2rem;
+    }
+    
+}
+@media screen and (max-width:480px){
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(8,1fr);
+        margin-bottom: 1rem;
+        
+    }
+    .navbar>h2{
+        font-size: 1rem;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0.4rem;
+
+    }
+   
+    .left-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:0.2rem;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

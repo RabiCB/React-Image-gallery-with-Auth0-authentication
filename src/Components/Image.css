@@ -1,0 +1,32 @@
+.imagebox{
+    width: 100%;
+    height: 100%;
+    position:relative;
+}
+
+.images-all{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.reset-btn{
+    position: absolute;
+    top:0.4rem;
+    right: 0.4rem;
+    z-index: 100;
+    cursor:pointer;
+    color: red;
+}
+.icon{
+
+    position: absolute;
+    bottom: 0.3rem;
+    right:0.4rem;
+    color:white;
+    
+}

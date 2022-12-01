@@ -1,0 +1,42 @@
+.login-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    height:300px;
+    width:100%;
+    margin-top: 4%;
+    flex-direction: column;
+
+}
+.logo{
+    border-radius: 50%;
+    width:160px;
+    object-fit: contain;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.login-div{
+    height:14rem;
+    background-color: rgb(240, 238, 238);
+    border-radius: 10px;
+    width:20rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+
+}
+.btn{
+    height: 2.6rem;
+    display: flex;
+    color:black;
+    width:8rem;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    border: none;
+    
+    cursor: pointer;
+}
